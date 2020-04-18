@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <!-- Main Content -->
+
+    <!-- Word Counter Form -->
+    <section id="word-counter">
+        <div class="container mt-3 mb-3">
+          <div class="col-md-12">
+            <form action="{% url 'count' %}">
+              <div class="form-group">
+                  <label for="textinput" class="col-form-label text-white">Copy and Paste Text Here:</label>
+                  <textarea name="textinput" class="form-control"></textarea>
+              </div>
+  
+              <div class="col-md-12 text-center">
+                <a href="{% url 'count' %}">
+                  <button class="btn btn-primary w-50"><i class="fas fa-calculator"></i> Count </button>
+                </a>
+              </div>
+  
+            </form>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Quote -->
+      <div class="container mb-3">
+        <div class="col-md-12">
+          <div class="card bg-dark text-white">
+            <img src="{% static 'img/clock.jpg' %}" class="card-img h-25" alt="quote">
+          </div>
+        </div>
+      </div>
+
+
+{% endblock %}

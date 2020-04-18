@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <!-- Main Content -->
+
+    <!-- Breadcrumb -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About</li>
+          </ol>
+        </nav>
+      </div>
+
+    <!-- About -->
+    <div class="container mt-3 mb-3">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{% static 'img/about.jpg' %}" alt="about-word-counter" class="rounded img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-white">About</h3>
+            <hr>
+            <p class="text-white text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor tempor velit non dapibus. Morbi ac egestas dolor. Aenean vel pharetra lacus, dictum bibendum magna. Cras a cursus tellus, eget consectetur felis. Duis at aliquam magna. In malesuada diam vitae purus pellentesque venenatis. Praesent eros diam, porta aliquet sagittis tristique, euismod id mi.</p>
+            <p class="text-white text-justify">Nunc fermentum luctus ante in tempor. Aenean vestibulum vitae tortor id efficitur. Morbi molestie maximus nisl. Proin in dolor odio. Duis nec ultrices augue. Aliquam auctor quis dolor vel elementum. Nulla non nunc non nisi malesuada dapibus ac vitae sem. Duis volutpat, ipsum quis rhoncus gravida, elit quam maximus tellus, sit amet sollicitudin diam enim eget lacus. Donec eu dictum tortor, sed mattis ante. </p>
+            <p class="text-white text-justify">Aliquam non justo magna. Donec nec turpis at dui rutrum varius. Donec vitae imperdiet augue. Nunc erat lectus, placerat quis vehicula eget, auctor id libero. Phasellus non feugiat mi. Suspendisse fermentum lorem urna, sit amet sagittis ipsum fringilla vehicula. Pellentesque interdum nec arcu egestas placerat. Praesent ultrices urna sit amet justo iaculis pretium. </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+{% endblock %}
